@@ -1,0 +1,16 @@
+{
+  "name": "n11 Kargo Arama",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "n11 Kargoya Göre Ürün Arama",
+  "background": "background.html",
+  "browser_action": {
+    "name": "n11 Kargo Arama",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.js", "content.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
